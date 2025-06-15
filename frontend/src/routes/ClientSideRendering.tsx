@@ -21,7 +21,9 @@ export default function ClientSideRendering() {
           <h1 className="text-3xl font-bold text-violet-800">
             Client-Side Rendering
           </h1>
-          <p className="text-lg text-violet-600">Rendered fully in React.</p>
+          <p className="text-lg text-violet-600">
+            The Pink Platypus Perfected Poopin{" "}
+          </p>
           <Link
             to="/"
             className="text-neutral-200 font-semibold bg-teal-600 px-4 py-2 rounded hover:bg-teal-700"
