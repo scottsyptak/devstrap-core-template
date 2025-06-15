@@ -1,0 +1,24 @@
+{# backend/app/templates/errors/not-found.jinja #}
+
+{% extends "layouts/server.jinja" %}
+
+{% block title %}
+  Not Found
+{% endblock title %}
+
+{% block description -%}
+  No resource was found at this route.
+{%- endblock description %}
+
+{% block body %}
+  <div class="bg-stone-300 min-h-screen flex flex-col items-center justify-center p-10">
+    <div class="p-6 rounded-lg bg-red-200 space-y-6 flex flex-col items-center justify-center">
+      <h1 class="text-3xl font-bold text-red-700">
+        Not Found
+      </h1>
+      <p class="text-red-700 text-xl">
+        No resource was found at this route.
+      </p>
+    </div>
+  </div>
+{% endblock body %}

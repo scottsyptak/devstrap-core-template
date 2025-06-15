@@ -1,0 +1,11 @@
+{# backend/app/templates/partials/head-client.jinja #}
+
+{% if css_bundle %}
+  <link rel="stylesheet"
+        href="{{ url_for('static', path='build/' ~ css_bundle) }} " />
+{% endif %}
+
+{% if js_bundle %}
+  <script type="module"
+          src="{{ url_for('static', path='build/' ~ js_bundle) }} "></script>
+{% endif %}

@@ -1,0 +1,38 @@
+name: Feature Request
+description: Suggest an improvement or addition
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Want to suggest something awesome for DevStrap? We’d love to hear it!
+
+  - type: input
+    id: title
+    attributes:
+      label: Feature Title
+      placeholder: Add a terminal welcome banner for devs
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the feature
+      description: What should it do? Why is it useful?
+      placeholder: A one-line pitch or detailed description
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Where does it belong?
+      options:
+        - Frontend
+        - Backend
+        - Documentation
+        - CI/CD
+        - Other
+
+  - type: textarea
+    id: related
+    attributes:
+      label: Related issues or context
+      description: Is this related to a bug, or a broader goal?

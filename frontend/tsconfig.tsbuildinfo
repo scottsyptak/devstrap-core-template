@@ -1,0 +1,1 @@
+{"root":["./src/main.tsx","./src/routes/apistatus.tsx","./src/routes/clientsiderendering.tsx","./src/routes/frontendhealth.tsx","./src/routes/homepage.tsx","./src/routes/hybridrendering.tsx","./src/routes/nodirectaccess.tsx","./src/utils/api.ts","./src/utils/usetitle.ts","./vite.config.ts"],"version":"5.8.3"}

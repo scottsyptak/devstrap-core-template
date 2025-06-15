@@ -1,0 +1,11 @@
+{# backend/app/templates/layouts/hybrid.jinja #}
+
+{% extends "layouts/base.jinja" %}
+
+{% block head %}
+
+  {% include "partials/head-server.jinja" %}
+
+  {% include "partials/head-client.jinja" %}
+
+{% endblock head %}

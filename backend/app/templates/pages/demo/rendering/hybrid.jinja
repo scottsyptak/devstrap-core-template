@@ -1,0 +1,20 @@
+{# backend/app/templates/pages/demo/rendering/hybrid.jinja #}
+
+{% extends "layouts/hybrid.jinja" %}
+
+{% block title %}
+  Hybrid Rendering Demo
+{% endblock title %}
+
+{% block description -%}
+  A demonstration of a hybrid rendering route.
+{%- endblock description %}
+
+{% block body %}
+  <div class="bg-stone-300 min-h-screen flex flex-col items-center justify-center p-10">
+    <h1 class="text-4xl font-bold text-orange-800 py-12">
+      This part is rendered by Jinja.
+    </h1>
+    <div id="root"></div>
+  </div>
+{% endblock body %}

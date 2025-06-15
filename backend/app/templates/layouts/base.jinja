@@ -1,0 +1,27 @@
+{# backend/app/templates/layouts/base.jinja #}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %}
+        DevStrap
+      {% endblock title %}
+    </title>
+    <meta name="description"
+          content="{%- block description -%}A demonstration of a server-side rendering route.{%- endblock description -%}" />
+    <meta name="keywords"
+          content="devstrap, full-stack, fastapi, react, template" />
+    <link rel="icon"
+          type="image/x-icon"
+          href="{{ url_for('static', path='images/favicon.ico') }}">
+    {% block head %}
+    {% endblock head %}
+  </head>
+  <body>
+    {% block body %}
+    {% endblock body %}
+  </body>
+</html>

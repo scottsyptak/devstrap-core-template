@@ -1,0 +1,30 @@
+{# backend/app/templates/pages/demo/rendering/server-side.jinja #}
+
+{% extends "layouts/server.jinja" %}
+
+{% block title %}
+  Server-Side Rendering Demo
+{% endblock title %}
+
+{% block description -%}
+  A demonstration of a server-side rendering route.
+{%- endblock description %}
+
+{% block body %}
+  <div class="bg-stone-300 min-h-screen flex flex-col items-center justify-center p-10">
+    <div class="p-6 rounded-lg bg-orange-200 space-y-6 flex flex-col items-center justify-center">
+      <h1 class="text-4xl font-bold text-orange-800">
+        Server-Side Rendering
+      </h1>
+      <p class="text-lg text-orange-800">
+        Hello {{ user }}! This content was rendered server-side with Jinja2.
+      </p>
+      <a  
+        href="{{ url_for('home_page') }}"
+        class="text-neutral-200 font-semibold bg-teal-600 px-4 py-2 rounded hover:bg-teal-700"
+      >
+        Home Page
+      </a>
+    </div>
+  </div>
+{% endblock body %}

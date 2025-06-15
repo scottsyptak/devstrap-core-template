@@ -1,0 +1,17 @@
+# backend/.dockerignore
+
+# Environment Variables
+.env
+
+# Python
+__pycache__/
+.venv/
+*.py[cod]
+
+# OS + editor files
+.DS_Store
+*.swp
+
+# Node junk
+node_modules/
+npm-debug.log

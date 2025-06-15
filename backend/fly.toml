@@ -1,0 +1,39 @@
+# backend/fly.toml
+
+app = 'devstrap-core-template'
+primary_region = 'dfw'
+
+[build]
+  dockerfile = 'Dockerfile'
+
+[env]
+  ENV = 'production'
+  PORT = "8080"
+  FORWARDED_ALLOW_IPS = "*"
+
+[[services]]
+  protocol = 'tcp'
+  internal_port = 8080
+
+  [[services.ports]]
+    port = 80
+    handlers = ['http']
+
+  [[services.ports]]
+    port = 443
+    handlers = ['tls', 'http']
+
+  [[services.tcp_checks]]
+    interval = '10s'
+    timeout = '2s'
+    grace_period = '10s'
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
+
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
+
